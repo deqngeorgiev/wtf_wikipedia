@@ -11,7 +11,6 @@ const normalizeCategory = function(cat = '') {
 }
 
 const makeUrl = function(cat, lang, options) {
-  cat = encodeURIComponent(cat)
   let url = `https://${lang}.wikipedia.org/w/api.php`
   if (site_map[lang]) {
     url = site_map[lang] + '/w/api.php'
